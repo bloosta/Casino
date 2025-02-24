@@ -1,0 +1,7 @@
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\CasinoConsoleApp.exe.config
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\CasinoConsoleApp.exe
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\CasinoConsoleApp.pdb
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\obj\Debug\CasinoConsoleApp.csproj.AssemblyReference.cache
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\obj\Debug\CasinoConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\obj\Debug\CasinoConsoleApp.exe
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\obj\Debug\CasinoConsoleApp.pdb
