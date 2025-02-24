@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.34407.143
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasinoConsoleApp", "CasinoConsoleApp\CasinoConsoleApp.csproj", "{00FDFDCF-0A96-4CF6-BB80-B52FF8C8FDDD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasinoFrameworkApp", "CasinoFrameworkApp\CasinoFrameworkApp.csproj", "{50F2F1FB-03D6-4A59-9A7A-E90D56347E0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{00FDFDCF-0A96-4CF6-BB80-B52FF8C8FDDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00FDFDCF-0A96-4CF6-BB80-B52FF8C8FDDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00FDFDCF-0A96-4CF6-BB80-B52FF8C8FDDD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50F2F1FB-03D6-4A59-9A7A-E90D56347E0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50F2F1FB-03D6-4A59-9A7A-E90D56347E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50F2F1FB-03D6-4A59-9A7A-E90D56347E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50F2F1FB-03D6-4A59-9A7A-E90D56347E0A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
