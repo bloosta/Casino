@@ -8,5 +8,6 @@ namespace CasinoConsoleApp
 {
     class Author
     {
+        .
     }
 }
