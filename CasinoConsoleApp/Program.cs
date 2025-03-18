@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -36,11 +37,12 @@ namespace CasinoConsoleApp
 
         static void Main()
         {
-            //var options = new DbContextOptionsBuilder<BooksContext>()
-            //    .UseSqlite("Filename=../../../MyLocalLibrary.db")
-            //    .Options;
+            var options = new DbContextOptionsBuilder<SessionsContext>()
+                .UseSqlite("Filename=../../../MyLocalLibrary.db")
+                .Options;
 
-            //using var db = new BooksContext(options);
+            var db = new SessionsContext(options);
+
 
             //db.Database.EnsureCreated();
 
@@ -61,7 +63,10 @@ namespace CasinoConsoleApp
                     Console.WriteLine($"    {client}");
                     Console.WriteLine();
                 }
+
             }
+            Console.Read();
+            // сделать 1. выргузку db.close()  2. через фигурные using (dsdfsfdsd){}
         }
     }
 }
