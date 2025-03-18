@@ -6,7 +6,16 @@ using System.Threading.Tasks;
 
 namespace CasinoConsoleApp
 {
-    public class Book
+    public class Session
     {
+        public int Id { get; set; }
+        public DateTime DateTime { get; set; }
+        public string GameType { get; set; }
+        public ICollection<Client> Clients { get; set; }
+        public override string ToString()
+        {
+            return $"{Id} {DateTime} {GameType} {Clients}";
+
+        }
     }
 }
