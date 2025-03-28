@@ -38,33 +38,33 @@ namespace CasinoConsoleApp
         static void Main()
         {
             var options = new DbContextOptionsBuilder<SessionsContext>()
-                .UseSqlite("Filename=../../../MyLocalLibrary.db")
+                .UseSqlite("Filename=../../../LocalLibrary.db")
                 .Options;
 
             var db = new SessionsContext(options);
 
 
-            //db.Database.EnsureCreated();
+            db.Database.EnsureCreated();
 
-            var sessions = CreateData();
+            //var sessions = CreateData();
+  
+            ////db.Authors.AddRange(authors);
 
-            //db.Authors.AddRange(authors);
+            ////db.SaveChanges();
 
-            //db.SaveChanges();
+            ////var recentBooks = from b in db.Books where b.YearOfPublication > 1900 select b;
 
-            //var recentBooks = from b in db.Books where b.YearOfPublication > 1900 select b;
+            //foreach (var session in sessions)
+            //{
+            //    Console.WriteLine($"{session} была сыграна..");
 
-            foreach (var session in sessions)
-            {
-                Console.WriteLine($"{session} была сыграна..");
+            //    foreach (var client in session.Clients)
+            //    {
+            //        Console.WriteLine($"    {client}");
+            //        Console.WriteLine();
+            //    }
 
-                foreach (var client in session.Clients)
-                {
-                    Console.WriteLine($"    {client}");
-                    Console.WriteLine();
-                }
-
-            }
+            //}
             Console.Read();
             // сделать 1. выргузку db.close()  2. через фигурные using (dsdfsfdsd){}
         }
