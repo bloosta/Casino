@@ -11,10 +11,10 @@ namespace CasinoConsoleApp
         public int Id { get; set; }
         public DateTime DateTime { get; set; }
         public string GameType { get; set; }
-        public ICollection<Client> Clients { get; set; }
+        public ICollection<ClientSession> ClientSessions { get; set; }
         public override string ToString()
         {
-            return $"{Id} {DateTime} {GameType} {Clients}";
+            return $"{Id} {DateTime} {GameType} {ClientSessions}";
 
         }
     }

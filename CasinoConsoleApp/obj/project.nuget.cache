@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jXfuPi2qpPQv0ZQHU/iF2gZGbtsl/t+AI12C96vxOH9QFfO8kbo4p+8tvGEQSgjWVZwI9GHiLFS40qI3TYEjjw==",
+  "dgSpecHash": "cxWOKQ80mOdmMo8zTTH3H72pfDVK1h1RD4Q+LfUCX+IWAXGFQ4767DuZFlur6cGIaRbsGcx1QTz36Kib2ffTZg==",
   "success": true,
   "projectFilePath": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\CasinoConsoleApp.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,8 @@
     "C:\\Users\\bloosta\\.nuget\\packages\\microsoft.extensions.options\\3.1.32\\microsoft.extensions.options.3.1.32.nupkg.sha512",
     "C:\\Users\\bloosta\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.32\\microsoft.extensions.primitives.3.1.32.nupkg.sha512",
     "C:\\Users\\bloosta\\.nuget\\packages\\newtonsoft.json\\9.0.1\\newtonsoft.json.9.0.1.nupkg.sha512",
+    "C:\\Users\\bloosta\\.nuget\\packages\\npgsql\\4.1.9\\npgsql.4.1.9.nupkg.sha512",
+    "C:\\Users\\bloosta\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\3.1.18\\npgsql.entityframeworkcore.postgresql.3.1.18.nupkg.sha512",
     "C:\\Users\\bloosta\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.2\\sqlitepclraw.bundle_e_sqlite3.2.1.2.nupkg.sha512",
     "C:\\Users\\bloosta\\.nuget\\packages\\sqlitepclraw.core\\2.1.2\\sqlitepclraw.core.2.1.2.nupkg.sha512",
     "C:\\Users\\bloosta\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.2\\sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512",
@@ -39,7 +41,10 @@
     "C:\\Users\\bloosta\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\bloosta\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.7.1\\system.runtime.compilerservices.unsafe.4.7.1.nupkg.sha512",
     "C:\\Users\\bloosta\\.nuget\\packages\\system.runtime.interopservices.runtimeinformation\\4.0.0\\system.runtime.interopservices.runtimeinformation.4.0.0.nupkg.sha512",
-    "C:\\Users\\bloosta\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+    "C:\\Users\\bloosta\\.nuget\\packages\\system.text.encodings.web\\4.6.0\\system.text.encodings.web.4.6.0.nupkg.sha512",
+    "C:\\Users\\bloosta\\.nuget\\packages\\system.text.json\\4.6.0\\system.text.json.4.6.0.nupkg.sha512",
+    "C:\\Users\\bloosta\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
+    "C:\\Users\\bloosta\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -11,21 +11,21 @@ namespace CasinoConsoleApp
         {
             var sessions = new List<Session>
             {
-                new Session
-                {
-                    Id = 1,   DateTime = new DateTime(2025, 3, 18, 15, 25, 4), GameType = "Blackjack", Clients = new List<Client>
-                    {
-                        new Client {Id = 1, Name = "Egorov Ivan"},
-                        new Client {Id = 2, Name = "Kapustin Alexander"},
-                        new Client {Id = 3, Name = "Bogdanov Anton"}
-                    }
-                },
+                //new Session
+                //{
+                //    Id = 1,   DateTime = new DateTime(2025, 3, 18, 15, 25, 4), GameType = "Blackjack", Clients = new List<Client>
+                //    {
+                //        new Client {Id = 1, Name = "Egorov Ivan"},
+                //        new Client {Id = 2, Name = "Kapustin Alexander"},
+                //        new Client {Id = 3, Name = "Bogdanov Anton"}
+                //    }
+                //},
                 new Session
                 {
                     Id = 2, DateTime = new DateTime(2025, 3, 8, 5, 1, 14), GameType = "Poker", Clients = new List<Client>
                     {
-                        new Client {Id = 1, Name = "Egorov Ivan"},
-                        new Client {Id = 2, Name = "Kapustin Alexander"},
+                        //new Client {Id = 1, Name = "Egorov Ivan"},
+                        //new Client {Id = 2, Name = "Kapustin Alexander"},
                         new Client {Id = 4, Name = "Biryukova Diana"}
 
                     }
@@ -37,14 +37,24 @@ namespace CasinoConsoleApp
 
         static void Main()
         {
+
             var options = new DbContextOptionsBuilder<SessionsContext>()
                 .UseSqlite("Filename=../../../LocalLibrary.db")
                 .Options;
 
             var db = new SessionsContext(options);
 
-
             db.Database.EnsureCreated();
+
+            var sessions = CreateData();
+
+            db.Sessions.AddRange(sessions);
+
+            db.SaveChanges();
+            
+           
+
+
 
             //var sessions = CreateData();
   
@@ -65,7 +75,7 @@ namespace CasinoConsoleApp
             //    }
 
             //}
-            Console.Read();
+            //Console.Read();
             // сделать 1. выргузку db.close()  2. через фигурные using (dsdfsfdsd){}
         }
     }
