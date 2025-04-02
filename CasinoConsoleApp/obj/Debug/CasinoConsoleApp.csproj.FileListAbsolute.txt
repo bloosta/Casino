@@ -41,3 +41,9 @@ C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\obj\Debug\CasinoConsoleApp
 C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\obj\Debug\CasinoConsoleApp.csproj.CopyComplete
 C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\obj\Debug\CasinoConsoleApp.exe
 C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\obj\Debug\CasinoConsoleApp.pdb
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\Npgsql.dll
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\System.Text.Json.dll
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\System.ValueTuple.dll
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\obj\Debug\CasinoConsoleApp.exe.config

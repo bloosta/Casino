@@ -16,17 +16,23 @@ namespace CasinoConsoleApp
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=your_database;Username=your_username;Password=your_password");
+            optionsBuilder.UseNpgsql("Host=localhost; Port=5432; Database=casino; Username = postgres; Password = postgres");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Client>()
-                .HasMany(c => c.Sessions)
-                .WithMany(s => s.Clients)
-                .UsingEntity<Dictionary<string, object>>(
-                    "ClientSession",
-                    j => j.HasOne<Session>().WithMany().HasForeignKey("SessionId"),
-                    j => j.HasOne<Client>().WithMany().HasForeignKey("ClientId"));
+            modelBuilder.Entity<ClientSession>()
+                .HasKey(cs => new { cs.ClientId, cs.SessionId });
+
+            modelBuilder.Entity<ClientSession>()
+                .HasOne(cs => cs.Client)
+                .WithMany(c => c.ClientSessions)
+                .HasForeignKey(cs => cs.ClientId);
+
+            modelBuilder.Entity<ClientSession>()
+                .HasOne(cs => cs.Session)
+                .WithMany(s => s.ClientSessions)
+                .HasForeignKey(cs => cs.SessionId);
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CasinoConsoleApp
 {
-    class ClientSession
+    public class ClientSession
     {
         public int ClientId { get; set; }
         public Client Client { get; set; }

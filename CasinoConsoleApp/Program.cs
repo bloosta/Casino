@@ -1,83 +1,49 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace CasinoConsoleApp
 {
     class Program
     {
-        static IEnumerable<Session> CreateData()
+        static void Main(string[] args)
         {
-            var sessions = new List<Session>
+            using (var context = new CasinoContext())
             {
-                //new Session
-                //{
-                //    Id = 1,   DateTime = new DateTime(2025, 3, 18, 15, 25, 4), GameType = "Blackjack", Clients = new List<Client>
-                //    {
-                //        new Client {Id = 1, Name = "Egorov Ivan"},
-                //        new Client {Id = 2, Name = "Kapustin Alexander"},
-                //        new Client {Id = 3, Name = "Bogdanov Anton"}
-                //    }
-                //},
-                new Session
+                // Получаем список всех клиентов
+                var clients = context.Clients.ToList();
+
+                // Получаем список всех сессий
+                var sessions = context.Sessions
+                                      .Include(s => s.ClientSessions)
+                                      .ThenInclude(cs => cs.Client)
+                                      .ToList();
+
+                // Выводим таблицу клиентов
+                Console.WriteLine("Clients:");
+                Console.WriteLine("-----------------------------------------------");
+                Console.WriteLine("| Id | Name                           |");
+                Console.WriteLine("-----------------------------------------------");
+                foreach (var client in clients)
                 {
-                    Id = 2, DateTime = new DateTime(2025, 3, 8, 5, 1, 14), GameType = "Poker", Clients = new List<Client>
-                    {
-                        //new Client {Id = 1, Name = "Egorov Ivan"},
-                        //new Client {Id = 2, Name = "Kapustin Alexander"},
-                        new Client {Id = 4, Name = "Biryukova Diana"}
-
-                    }
+                    Console.WriteLine($"| {client.Id,3} | {client.Name,-30} |");
                 }
-            };
+                Console.WriteLine("-----------------------------------------------");
 
-            return sessions;
-        }
+                Console.WriteLine();
 
-        static void Main()
-        {
-
-            var options = new DbContextOptionsBuilder<SessionsContext>()
-                .UseSqlite("Filename=../../../LocalLibrary.db")
-                .Options;
-
-            var db = new SessionsContext(options);
-
-            db.Database.EnsureCreated();
-
-            var sessions = CreateData();
-
-            db.Sessions.AddRange(sessions);
-
-            db.SaveChanges();
-            
-           
-
-
-
-            //var sessions = CreateData();
-  
-            ////db.Authors.AddRange(authors);
-
-            ////db.SaveChanges();
-
-            ////var recentBooks = from b in db.Books where b.YearOfPublication > 1900 select b;
-
-            //foreach (var session in sessions)
-            //{
-            //    Console.WriteLine($"{session} была сыграна..");
-
-            //    foreach (var client in session.Clients)
-            //    {
-            //        Console.WriteLine($"    {client}");
-            //        Console.WriteLine();
-            //    }
-
-            //}
-            //Console.Read();
-            // сделать 1. выргузку db.close()  2. через фигурные using (dsdfsfdsd){}
+                // Выводим таблицу сессий
+                Console.WriteLine("Sessions:");
+                Console.WriteLine("--------------------------------------------------------------------------");
+                Console.WriteLine("| Id | DateTime           | GameType        | Clients                    |");
+                Console.WriteLine("--------------------------------------------------------------------------");
+                foreach (var session in sessions)
+                {
+                    var clientNames = string.Join(", ", session.ClientSessions.Select(cs => cs.Client.Name));
+                    Console.WriteLine($"| {session.Id,3} | {session.DateTime,-17} | {session.GameType,-15} | {clientNames,-25} |");
+                }
+                Console.WriteLine("--------------------------------------------------------------------------");
+            }
         }
     }
 }
-
