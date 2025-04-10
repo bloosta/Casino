@@ -10,16 +10,14 @@ namespace CasinoConsoleApp
         {
             using (var context = new CasinoContext())
             {
-                // Получаем список всех клиентов
+
                 var clients = context.Clients.ToList();
 
-                // Получаем список всех сессий
                 var sessions = context.Sessions
                                       .Include(s => s.ClientSessions)
                                       .ThenInclude(cs => cs.Client)
                                       .ToList();
 
-                // Выводим таблицу клиентов
                 Console.WriteLine("Clients:");
                 Console.WriteLine("-----------------------------------------------");
                 Console.WriteLine("| Id | Name                           |");
@@ -32,7 +30,6 @@ namespace CasinoConsoleApp
 
                 Console.WriteLine();
 
-                // Выводим таблицу сессий
                 Console.WriteLine("Sessions:");
                 Console.WriteLine("--------------------------------------------------------------------------");
                 Console.WriteLine("| Id | DateTime           | GameType        | Clients                    |");

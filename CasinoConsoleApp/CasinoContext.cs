@@ -1,21 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-
-
+﻿using Microsoft.EntityFrameworkCore;
 namespace CasinoConsoleApp
 {
     public class CasinoContext : DbContext
     {
         public DbSet<Client> Clients { get; set; }
         public DbSet<Session> Sessions { get; set; }
+        public DbSet<ClientSession> ClientSessions { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=your_database;Username=your_username;Password=your_password");
             optionsBuilder.UseNpgsql("Host=localhost; Port=5432; Database=casino; Username = postgres; Password = postgres");
         }
 
@@ -27,12 +20,15 @@ namespace CasinoConsoleApp
             modelBuilder.Entity<ClientSession>()
                 .HasOne(cs => cs.Client)
                 .WithMany(c => c.ClientSessions)
-                .HasForeignKey(cs => cs.ClientId);
+                .HasForeignKey(cs => cs.ClientId)
+                .HasConstraintName("FK_ClientSession_Client");
 
             modelBuilder.Entity<ClientSession>()
                 .HasOne(cs => cs.Session)
                 .WithMany(s => s.ClientSessions)
-                .HasForeignKey(cs => cs.SessionId);
+                .HasForeignKey(cs => cs.SessionId)
+                .HasConstraintName("FK_ClientSession_Session");
         }
+
     }
 }

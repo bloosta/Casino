@@ -1,0 +1,9 @@
+C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\bin\Debug\CasinoFrameworkApp.exe.config
+C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\bin\Debug\CasinoFrameworkApp.exe
+C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\bin\Debug\CasinoFrameworkApp.pdb
+C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\obj\Debug\CasinoFrameworkApp.csproj.AssemblyReference.cache
+C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\obj\Debug\CasinoFrameworkApp.Properties.Resources.resources
+C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\obj\Debug\CasinoFrameworkApp.csproj.GenerateResource.cache
+C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\obj\Debug\CasinoFrameworkApp.csproj.CoreCompileInputs.cache
+C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\obj\Debug\CasinoFrameworkApp.exe
+C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\obj\Debug\CasinoFrameworkApp.pdb

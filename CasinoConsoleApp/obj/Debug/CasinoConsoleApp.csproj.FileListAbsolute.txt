@@ -36,7 +36,6 @@ C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\System.Memory.dl
 C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\obj\Debug\CasinoConsoleApp.csproj.AssemblyReference.cache
 C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\obj\Debug\CasinoConsoleApp.csproj.CoreCompileInputs.cache
 C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\obj\Debug\CasinoConsoleApp.csproj.CopyComplete
 C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\obj\Debug\CasinoConsoleApp.exe
@@ -47,3 +46,8 @@ C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\System.Text.Enco
 C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\System.Text.Json.dll
 C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\System.ValueTuple.dll
 C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\obj\Debug\CasinoConsoleApp.exe.config
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\EntityFramework.dll
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\obj\Debug\CasinoConsoleApp.csproj.AssemblyReference.cache
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\EFCore.NamingConventions.dll
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
