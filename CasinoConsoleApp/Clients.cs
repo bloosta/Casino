@@ -7,12 +7,16 @@ using System.Collections.Generic;
 
 namespace CasinoConsoleApp
 {
-    public partial class Clientsession
+    public partial class Clients
     {
-        public int Clientid { get; set; }
-        public int Sessionid { get; set; }
+        public Clients()
+        {
+            Clientsession = new HashSet<Clientsession>();
+        }
 
-        public virtual Clients Client { get; set; }
-        public virtual Sessions Session { get; set; }
+        public int Id { get; set; }
+        public string Name { get; set; }
+
+        public virtual ICollection<Clientsession> Clientsession { get; set; }
     }
 }

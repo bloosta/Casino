@@ -1,34 +1,95 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
+
+// Code scaffolded by EF Core assumes nullable reference types (NRTs) are not used or disabled.
+// If you have enabled NRTs for your project, then un-comment the following line:
+// #nullable disable
+
 namespace CasinoConsoleApp
 {
-    public class CasinoContext : DbContext
+    public partial class casinoContext : DbContext
     {
-        public DbSet<Client> Clients { get; set; }
-        public DbSet<Session> Sessions { get; set; }
-        public DbSet<ClientSession> ClientSessions { get; set; }
+        public casinoContext()
+        {
+        }
+
+        public casinoContext(DbContextOptions<casinoContext> options)
+            : base(options)
+        {
+        }
+
+        public virtual DbSet<Clients> Clients { get; set; }
+        public virtual DbSet<Clientsession> Clientsession { get; set; }
+        public virtual DbSet<Sessions> Sessions { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseNpgsql("Host=localhost; Port=5432; Database=casino; Username = postgres; Password = postgres");
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder.UseNpgsql("Host=localhost;Database=casino;Username=postgres;Password=postgres");
+            }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<ClientSession>()
-                .HasKey(cs => new { cs.ClientId, cs.SessionId });
+            modelBuilder.Entity<Clients>(entity =>
+            {
+                entity.ToTable("clients");
 
-            modelBuilder.Entity<ClientSession>()
-                .HasOne(cs => cs.Client)
-                .WithMany(c => c.ClientSessions)
-                .HasForeignKey(cs => cs.ClientId)
-                .HasConstraintName("FK_ClientSession_Client");
+                entity.Property(e => e.Id).HasColumnName("id");
 
-            modelBuilder.Entity<ClientSession>()
-                .HasOne(cs => cs.Session)
-                .WithMany(s => s.ClientSessions)
-                .HasForeignKey(cs => cs.SessionId)
-                .HasConstraintName("FK_ClientSession_Session");
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasColumnName("name")
+                    .HasMaxLength(255);
+            });
+
+            modelBuilder.Entity<Clientsession>(entity =>
+            {
+                entity.HasKey(e => new { e.Clientid, e.Sessionid })
+                    .HasName("clientsession_pkey");
+
+                entity.ToTable("clientsession");
+
+                entity.Property(e => e.Clientid).HasColumnName("clientid");
+
+                entity.Property(e => e.Sessionid).HasColumnName("sessionid");
+
+                entity.HasOne(d => d.Client)
+                    .WithMany(p => p.Clientsession)
+                    .HasForeignKey(d => d.Clientid)
+                    .HasConstraintName("clientsession_clientid_fkey");
+
+                entity.HasOne(d => d.Session)
+                    .WithMany(p => p.Clientsession)
+                    .HasForeignKey(d => d.Sessionid)
+                    .HasConstraintName("clientsession_sessionid_fkey");
+            });
+
+            modelBuilder.Entity<Sessions>(entity =>
+            {
+                entity.ToTable("sessions");
+
+                entity.Property(e => e.Id).HasColumnName("id");
+
+                entity.Property(e => e.Clients)
+                    .IsRequired()
+                    .HasColumnName("clients");
+
+                entity.Property(e => e.Datetime)
+                    .HasColumnName("datetime")
+                    .HasDefaultValueSql("now()");
+
+                entity.Property(e => e.Gametype)
+                    .IsRequired()
+                    .HasColumnName("gametype")
+                    .HasMaxLength(100);
+            });
+
+            OnModelCreatingPartial(modelBuilder);
         }
 
+        partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
     }
 }

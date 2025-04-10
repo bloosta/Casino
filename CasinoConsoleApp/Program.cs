@@ -8,13 +8,13 @@ namespace CasinoConsoleApp
     {
         static void Main(string[] args)
         {
-            using (var context = new CasinoContext())
+            using (var context = new casinoContext())
             {
 
                 var clients = context.Clients.ToList();
 
                 var sessions = context.Sessions
-                                      .Include(s => s.ClientSessions)
+                                      .Include(s => s.Clientsession)
                                       .ThenInclude(cs => cs.Client)
                                       .ToList();
 
@@ -36,10 +36,11 @@ namespace CasinoConsoleApp
                 Console.WriteLine("--------------------------------------------------------------------------");
                 foreach (var session in sessions)
                 {
-                    var clientNames = string.Join(", ", session.ClientSessions.Select(cs => cs.Client.Name));
-                    Console.WriteLine($"| {session.Id,3} | {session.DateTime,-17} | {session.GameType,-15} | {clientNames,-25} |");
+                    var clientNames = string.Join(", ", session.Clientsession.Select(cs => cs.Client.Name));
+                    Console.WriteLine($"| {session.Id,3} | {session.Datetime,-17} | {session.Gametype,-15} | {clientNames,-25} |");
                 }
                 Console.WriteLine("--------------------------------------------------------------------------");
+                Console.ReadLine();
             }
         }
     }
