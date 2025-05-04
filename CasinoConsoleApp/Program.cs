@@ -2,8 +2,14 @@
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using CasinoConsoleApp.Data;
+using Microsoft.Extensions.Configuration;
+
 
 var host = Host.CreateDefaultBuilder(args)
+    .ConfigureAppConfiguration((hostingContext, config) =>
+{
+config.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+})
     .ConfigureServices((context, services) =>
     {
         var conn = context.Configuration["ConnectionStrings:DefaultConnection"];
