@@ -17,7 +17,14 @@ namespace CasinoConsoleApp.Data
             modelBuilder.Entity<Game>()
                 .HasMany(g => g.Players)
                 .WithMany(c => c.Games)
-                .UsingEntity(j => j.ToTable("ClientGames"));
+                .UsingEntity<Dictionary<string, object>>(
+                    "ClientGames",
+                    r => r.HasOne<Client>()
+                          .WithMany()
+                          .HasForeignKey("ClientId"),
+                    l => l.HasOne<Game>()
+                          .WithMany()
+                          .HasForeignKey("GameId"));
         }
     }
 }
