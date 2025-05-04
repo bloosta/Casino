@@ -1,47 +1,22 @@
-﻿using System;
-using System.Linq;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
+using CasinoConsoleApp.Data;
 
-namespace CasinoConsoleApp
-{
-    class Program
+var host = Host.CreateDefaultBuilder(args)
+    .ConfigureServices((context, services) =>
     {
-        static void Main(string[] args)
-        {
-            using (var context = new casinoContext())
-            {
+        var conn = context.Configuration["ConnectionStrings:DefaultConnection"];
+        services.AddDbContext<ApplicationDbContext>(options =>
+            options.UseSqlServer(conn));
 
-                var clients = context.Clients.ToList();
+        // TODO: здесь зарегистрировать все ICommandHandler<>
+    })
+    .Build();
 
-                var sessions = context.Sessions
-                                      .Include(s => s.Clientsession)
-                                      .ThenInclude(cs => cs.Client)
-                                      .ToList();
+using var scope = host.Services.CreateScope();
+var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+db.Database.Migrate();
 
-                Console.WriteLine("Clients:");
-                Console.WriteLine("-----------------------------------------------");
-                Console.WriteLine("| Id | Name                           |");
-                Console.WriteLine("-----------------------------------------------");
-                foreach (var client in clients)
-                {
-                    Console.WriteLine($"| {client.Id,3} | {client.Name,-30} |");
-                }
-                Console.WriteLine("-----------------------------------------------");
-
-                Console.WriteLine();
-
-                Console.WriteLine("Sessions:");
-                Console.WriteLine("--------------------------------------------------------------------------");
-                Console.WriteLine("| Id | DateTime           | GameType        | Clients                    |");
-                Console.WriteLine("--------------------------------------------------------------------------");
-                foreach (var session in sessions)
-                {
-                    var clientNames = string.Join(", ", session.Clientsession.Select(cs => cs.Client.Name));
-                    Console.WriteLine($"| {session.Id,3} | {session.Datetime,-17} | {session.Gametype,-15} | {clientNames,-25} |");
-                }
-                Console.WriteLine("--------------------------------------------------------------------------");
-                Console.ReadLine();
-            }
-        }
-    }
-}
+Console.WriteLine("CasinoConsoleApp запущено. Ожидание команд...");
+host.Run();

@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.34407.143
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasinoConsoleApp", "CasinoConsoleApp\CasinoConsoleApp.csproj", "{00FDFDCF-0A96-4CF6-BB80-B52FF8C8FDDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasinoFrameworkApp", "CasinoFrameworkApp\CasinoFrameworkApp.csproj", "{50F2F1FB-03D6-4A59-9A7A-E90D56347E0A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasinoFrameworkApp", "CasinoFrameworkApp\CasinoFrameworkApp.csproj", "{0BC89AFA-9BC8-407E-8110-D70609E1521E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CasinoTest", "CasinoTest\CasinoTest.csproj", "{90867C67-EAB3-426F-A7CD-A290A00C128C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +19,14 @@ Global
 		{00FDFDCF-0A96-4CF6-BB80-B52FF8C8FDDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00FDFDCF-0A96-4CF6-BB80-B52FF8C8FDDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00FDFDCF-0A96-4CF6-BB80-B52FF8C8FDDD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{50F2F1FB-03D6-4A59-9A7A-E90D56347E0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{50F2F1FB-03D6-4A59-9A7A-E90D56347E0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{50F2F1FB-03D6-4A59-9A7A-E90D56347E0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{50F2F1FB-03D6-4A59-9A7A-E90D56347E0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BC89AFA-9BC8-407E-8110-D70609E1521E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BC89AFA-9BC8-407E-8110-D70609E1521E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BC89AFA-9BC8-407E-8110-D70609E1521E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BC89AFA-9BC8-407E-8110-D70609E1521E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90867C67-EAB3-426F-A7CD-A290A00C128C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90867C67-EAB3-426F-A7CD-A290A00C128C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90867C67-EAB3-426F-A7CD-A290A00C128C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90867C67-EAB3-426F-A7CD-A290A00C128C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
