@@ -16,7 +16,7 @@ config.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
         services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(conn));
 
-        // TODO: здесь зарегистрировать все ICommandHandler<>
+        // TODO: здесь зарегистрировать все ICommandHandler<> 
     })
     .Build();
 
