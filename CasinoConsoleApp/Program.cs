@@ -1,4 +1,5 @@
 ﻿using CasinoConsoleApp.Core.Commands;
+using CasinoConsoleApp.Core.Entities;
 using CasinoConsoleApp.Core.Handlers;
 using CasinoConsoleApp.Core.Security;
 using CasinoConsoleApp.Data;
@@ -41,10 +42,12 @@ app.MapPost("/api/users/register", async (AddUserCommand cmd, ICommandHandler<Ad
     return Results.Ok();
 });
 
-app.MapPost("/api/users/login", async (LoginUserCommand cmd, ICommandHandler<LoginUserCommand> h) =>
+app.MapPost("/api/users/login", async (
+    LoginUserCommand cmd,
+    ICommandHandler<LoginUserCommand> h,
+    ICurrentUserContext ctx) => 
 {
     await h.HandleAsync(cmd);
-    var ctx = app.Services.GetRequiredService<ICurrentUserContext>();
     return ctx.IsAuthenticated ? Results.Ok() : Results.Unauthorized();
 });
 
@@ -73,12 +76,33 @@ app.MapDelete("/api/clients/{id:int}", async (int id, ICommandHandler<DeleteClie
     return Results.Ok();
 });
 
-app.MapGet("/api/clients", async ([FromQuery] string? nameFilter, [FromQuery] bool useRawSql,
-    ICommandHandler<SearchClientsCommand> h) =>
+app.MapGet("/api/clients", async (
+    [FromQuery] string? nameFilter,
+    [FromQuery] bool useRawSql,
+    ApplicationDbContext db) =>
 {
-    var cmd = new SearchClientsCommand { NameFilter = nameFilter, UseRawSql = useRawSql };
-    await h.HandleAsync(cmd);
-    return Results.Ok();
+    List<Client> result;
+
+    if (useRawSql)
+    {
+        // Сырое SQL
+        var sql = "SELECT * FROM Clients";
+        if (!string.IsNullOrWhiteSpace(nameFilter))
+            sql += " WHERE Name LIKE {0}";
+        result = await db.Clients
+            .FromSqlRaw(sql, $"%{nameFilter}%")
+            .ToListAsync();
+    }
+    else
+    {
+        // EF‑Core
+        var q = db.Clients.AsQueryable();
+        if (!string.IsNullOrWhiteSpace(nameFilter))
+            q = q.Where(c => EF.Functions.Like(c.Name, $"%{nameFilter}%"));
+        result = await q.ToListAsync();
+    }
+
+    return Results.Ok(result);
 });
 
 app.MapPost("/api/games", async (AddGameCommand cmd, ICommandHandler<AddGameCommand> h) =>
