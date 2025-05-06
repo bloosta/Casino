@@ -18,11 +18,11 @@
 					 Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" />
 
 			<!-- Лейбл и PasswordBox для пароля -->
-			<Label Content="Password" />
-			<PasswordBox Margin="0,0,0,10"
-						 Password="{Binding Password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <PasswordBox Margin="0,0,0,10"
+             x:Name="PasswordBox"
+             PasswordChanged="PasswordBox_PasswordChanged" />
 
-			<Button Content="Login"
+            <Button Content="Login"
 					Command="{Binding LoginCommand}"
 					IsDefault="True"
 					Width="80"

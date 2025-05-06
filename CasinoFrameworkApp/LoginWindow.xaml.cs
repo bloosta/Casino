@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 
 namespace CasinoFrameworkApp
 {
@@ -15,6 +16,15 @@ namespace CasinoFrameworkApp
             InitializeComponent();
             DataContext = vm;
         }
+
+        private void PasswordBox_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            if (DataContext is LoginViewModel vm)
+            {
+                vm.Password = ((PasswordBox)sender).Password;
+            }
+        }
+
     }
 
 }
