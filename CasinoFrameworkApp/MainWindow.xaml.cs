@@ -3,12 +3,13 @@ using CasinoFrameworkApp.ViewModels;
 
 namespace CasinoFrameworkApp
 {
-    public partial class GamesWindow : Window
+    public partial class MainWindow : Window
     {
-        public GamesWindow(GamesViewModel vm)
+        public MainWindow(MainWindowViewModel vm)
         {
             InitializeComponent();
             DataContext = vm;
         }
     }
+
 }

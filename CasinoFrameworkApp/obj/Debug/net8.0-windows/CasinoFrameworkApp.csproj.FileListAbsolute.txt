@@ -77,12 +77,13 @@ C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\bin\Debug\net8.0-windows
 C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\bin\Debug\net8.0-windows\CasinoConsoleApp.dll
 C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\bin\Debug\net8.0-windows\CasinoConsoleApp.pdb
 C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\obj\Debug\net8.0-windows\CasinoFrameworkApp.csproj.AssemblyReference.cache
-C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\obj\Debug\net8.0-windows\GamesWindow.baml
 C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\obj\Debug\net8.0-windows\LoginWindow.baml
-C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\obj\Debug\net8.0-windows\GamesWindow.g.cs
 C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\obj\Debug\net8.0-windows\LoginWindow.g.cs
+C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\obj\Debug\net8.0-windows\CasinoFrameworkApp_MarkupCompile.cache
+C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\obj\Debug\net8.0-windows\CasinoFrameworkApp_MarkupCompile.lref
+C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\obj\Debug\net8.0-windows\CasinoFrameworkApp.g.resources
 C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\obj\Debug\net8.0-windows\CasinoFrameworkApp.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\obj\Debug\net8.0-windows\CasinoFrameworkApp.AssemblyInfoInputs.cache

@@ -19,20 +19,19 @@ namespace CasinoFrameworkApp
             _host = Host.CreateDefaultBuilder()
                 .ConfigureServices((context, services) =>
                 {
-                    services.AddHttpClient("CasinoApi", client =>
-                    {
-                        client.BaseAddress = new Uri("http://localhost:49726/");
-                    });
+                    services.AddHttpClient("CasinoApi", c => c.BaseAddress = new Uri("http://localhost:49726/"));
                     services.AddScoped<IApiClientService, ApiClientService>();
 
                     services.AddTransient<LoginWindow>();
                     services.AddTransient<LoginViewModel>();
-                    services.AddTransient<GamesWindow>();
+
+                    services.AddTransient<ClientsViewModel>();
                     services.AddTransient<GamesViewModel>();
+                    services.AddTransient<MainWindowViewModel>();
+                    services.AddTransient<MainWindow>();
                 })
                 .Build();
 
-            // Инициализируйте его сразу после Build():
             Services = _host.Services;
         }
 
