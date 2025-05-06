@@ -82,21 +82,24 @@
                             <DataGridTextColumn Header="ID"       Binding="{Binding Id}"         Width="50"/>
                             <DataGridTextColumn Header="PlayedAt" Binding="{Binding PlayedAt}"   Width="150"/>
                             <DataGridTextColumn Header="Type"     Binding="{Binding Type}"       Width="150"/>
-                            <DataGridTextColumn Header="Players"  Binding="{Binding PlayerIds}"  Width="150"/>
+                            <DataGridTextColumn Header="Players"
+                    Binding="{Binding PlayerIdsDisplay}"
+                    Width="150"/>
+
                             <DataGridTemplateColumn Header="Actions" Width="100">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
                                         <StackPanel Orientation="Horizontal">
                                             <Button Content="✎"
-                              Command="{Binding DataContext.GamesVM.UpdateCommand,
-                                        RelativeSource={RelativeSource AncestorType=Window}}"
-                              CommandParameter="{Binding Id}"
-                              Width="30" Margin="0,0,5,0"/>
+        Command="{Binding DataContext.GamesVM.UpdateCommand,
+                  RelativeSource={RelativeSource AncestorType=Window}}"
+        CommandParameter="{Binding Id}"
+        Width="30" Margin="0,0,5,0"/>
                                             <Button Content="🗑"
-                              Command="{Binding DataContext.GamesVM.DeleteCommand,
-                                        RelativeSource={RelativeSource AncestorType=Window}}"
-                              CommandParameter="{Binding Id}"
-                              Width="30"/>
+        Command="{Binding DataContext.GamesVM.DeleteCommand,
+                  RelativeSource={RelativeSource AncestorType=Window}}"
+        CommandParameter="{Binding Id}"
+        Width="30"/>
                                         </StackPanel>
                                     </DataTemplate>
                                 </DataGridTemplateColumn.CellTemplate>
