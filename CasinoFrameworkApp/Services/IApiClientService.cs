@@ -5,7 +5,10 @@ using System.Threading.Tasks;
 namespace CasinoFrameworkApp.Services
 {
     public record ClientDto(int Id, string Name);
-    public record GameDto(int Id, DateTime PlayedAt, string Type, List<int> PlayerIds);
+    public record GameDto(int Id, DateTime PlayedAt, string Type, List<int> PlayerIds)
+    {
+        public string PlayerIdsDisplay => string.Join(", ", PlayerIds);
+    }
 
     public interface IApiClientService
     {
