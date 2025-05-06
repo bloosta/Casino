@@ -35,8 +35,22 @@ namespace CasinoFrameworkApp.Services
         public async Task DeleteClientAsync(int id, bool useRawSql = false) =>
             await _client.DeleteAsync($"api/clients/{id}?useRawSql={useRawSql}");
 
-        public async Task<List<ClientDto>> SearchClientsAsync(string? nameFilter, bool useRawSql = false) =>
-            await _client.GetFromJsonAsync<List<ClientDto>>($"api/clients?nameFilter={nameFilter}&useRawSql={useRawSql}");
+        public async Task<List<ClientDto>> SearchClientsAsync(
+        string? nameFilter,
+        bool useRawSql = false)
+        {
+            var query = new List<string>();
+            if (!string.IsNullOrWhiteSpace(nameFilter))
+                query.Add($"nameFilter={Uri.EscapeDataString(nameFilter)}");
+            query.Add($"useRawSql={useRawSql}");
+
+            var url = "api/clients";
+            if (query.Count > 0) url += "?" + string.Join('&', query);
+
+            var result = await _client.GetFromJsonAsync<List<ClientDto>>(url);
+            return result ?? new List<ClientDto>();
+        }
+
 
         // Игры
         public async Task AddGameAsync(DateTime playedAt, string type, List<int> clientIds, bool useRawSql = false) =>
@@ -48,8 +62,33 @@ namespace CasinoFrameworkApp.Services
         public async Task DeleteGameAsync(int id, bool useRawSql = false) =>
             await _client.DeleteAsync($"api/games/{id}?useRawSql={useRawSql}");
 
-        public async Task<List<GameDto>> SearchGamesAsync(DateTime? from, DateTime? to, string? typeFilter, int? clientId, bool useRawSql = false) =>
-            await _client.GetFromJsonAsync<List<GameDto>>(
-                $"api/games?from={from:O}&to={to:O}&typeFilter={typeFilter}&clientId={clientId}&useRawSql={useRawSql}");
+        public async Task<List<GameDto>> SearchGamesAsync(
+            DateTime? from,
+            DateTime? to,
+            string? typeFilter,
+            int? clientId,
+            bool useRawSql = false)
+        {
+            var queryParams = new List<string>();
+
+            if (from.HasValue)
+                queryParams.Add($"from={Uri.EscapeDataString(from.Value.ToString("O"))}");
+            if (to.HasValue)
+                queryParams.Add($"to={Uri.EscapeDataString(to.Value.ToString("O"))}");
+            if (!string.IsNullOrWhiteSpace(typeFilter))
+                queryParams.Add($"typeFilter={Uri.EscapeDataString(typeFilter)}");
+            if (clientId.HasValue)
+                queryParams.Add($"clientId={clientId.Value}");
+
+            // Всегда передаём флаг useRawSql
+            queryParams.Add($"useRawSql={useRawSql}");
+
+            var url = "api/games";
+            if (queryParams.Count > 0)
+                url += "?" + string.Join('&', queryParams);
+
+            var result = await _client.GetFromJsonAsync<List<GameDto>>(url);
+            return result ?? new List<GameDto>();
+        }
     }
 }

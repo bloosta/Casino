@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CasinoFrameworkApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6795d17e52e748dde8ea32644d16d25980588615")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e32969a5cf19db85553efa217b6c924545625398")]
 [assembly: System.Reflection.AssemblyProductAttribute("CasinoFrameworkApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CasinoFrameworkApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

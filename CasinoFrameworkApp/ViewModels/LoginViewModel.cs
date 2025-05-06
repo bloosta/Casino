@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 using CasinoFrameworkApp.Infrastructure;
@@ -36,15 +37,14 @@ namespace CasinoFrameworkApp.ViewModels
             !string.IsNullOrWhiteSpace(Username) &&
             !string.IsNullOrWhiteSpace(Password);
 
+
+        public event Action? LoginSucceeded;
         private async Task LoginAsync()
         {
             bool ok = await _api.LoginAsync(Username, Password);
             if (ok)
             {
-                // Переход к главному окну
-                var main = Application.Current.MainWindow;
-                // TODO: заменить окно на Clients/Games
-                MessageBox.Show("Успешный вход!");
+                LoginSucceeded?.Invoke();     
             }
             else
             {
