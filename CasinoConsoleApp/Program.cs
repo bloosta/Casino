@@ -7,9 +7,14 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Services.ConfigureHttpJsonOptions(opts =>
+{
+    opts.SerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+    opts.SerializerOptions.WriteIndented = true;
+});
 
 builder.Services.AddDbContext<ApplicationDbContext>(opt =>
     opt.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -85,7 +90,6 @@ app.MapGet("/api/clients", async (
 
     if (useRawSql)
     {
-        // Сырое SQL
         var sql = "SELECT * FROM Clients";
         if (!string.IsNullOrWhiteSpace(nameFilter))
             sql += " WHERE Name LIKE {0}";
@@ -130,20 +134,46 @@ app.MapDelete("/api/games/{id:int}", async (int id, ICommandHandler<DeleteGameCo
     return Results.Ok();
 });
 
-app.MapGet("/api/games", async ([FromQuery] DateTime? from, [FromQuery] DateTime? to,
-    [FromQuery] string? typeFilter, [FromQuery] int? clientId, [FromQuery] bool useRawSql,
-    ICommandHandler<SearchGamesCommand> h) =>
+app.MapGet("/api/games", async (
+        [FromServices] ApplicationDbContext db,
+        [FromQuery] DateTime? from,
+        [FromQuery] DateTime? to,
+        [FromQuery] string? typeFilter,
+        [FromQuery] int? clientId) =>
 {
-    var cmd = new SearchGamesCommand
-    {
-        From = from,
-        To = to,
-        TypeFilter = typeFilter,
-        ClientId = clientId,
-        UseRawSql = useRawSql
-    };
-    await h.HandleAsync(cmd);
-    return Results.Ok();
+    // Базовый запрос с Include для Players
+    var query = db.Games
+                  .Include(g => g.Players)
+                  .AsQueryable();
+
+    if (from.HasValue)
+        query = query.Where(g => g.PlayedAt >= from.Value);
+    if (to.HasValue)
+        query = query.Where(g => g.PlayedAt <= to.Value);
+    if (!string.IsNullOrWhiteSpace(typeFilter))
+        query = query.Where(g => EF.Functions.Like(g.Type, $"%{typeFilter}%"));
+    if (clientId.HasValue)
+        query = query.Where(g => g.Players.Any(p => p.Id == clientId.Value));
+
+    // Проекция в анонимный DTO
+    var result = await query
+        .Select(g => new
+        {
+            g.Id,
+            g.PlayedAt,
+            g.Type,
+            Players = g.Players
+                       .Select(p => new
+                       {
+                           p.Id,
+                           p.Name
+                       })
+                       .ToList()
+        })
+        .ToListAsync();
+
+    return Results.Ok(result);
 });
+
 
 app.Run();
