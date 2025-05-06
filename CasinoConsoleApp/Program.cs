@@ -115,7 +115,10 @@ app.MapPost("/api/games", async (AddGameCommand cmd, ICommandHandler<AddGameComm
     return Results.Ok();
 });
 
-app.MapPut("/api/games/{id:int}", async (int id, UpdateGameCommand cmd, ICommandHandler<UpdateGameCommand> h) =>
+app.MapPut("/api/games/{id:int}", async (
+    int id,
+    UpdateGameCommand cmd,
+    ICommandHandler<UpdateGameCommand> h) =>
 {
     var updateGameCmd = new UpdateGameCommand
     {
@@ -125,8 +128,10 @@ app.MapPut("/api/games/{id:int}", async (int id, UpdateGameCommand cmd, ICommand
         ClientIds = cmd.ClientIds,
         UseRawSql = cmd.UseRawSql
     };
+    await h.HandleAsync(updateGameCmd);
     return Results.Ok();
 });
+
 
 app.MapDelete("/api/games/{id:int}", async (int id, ICommandHandler<DeleteGameCommand> h) =>
 {
@@ -141,10 +146,7 @@ app.MapGet("/api/games", async (
         [FromQuery] string? typeFilter,
         [FromQuery] int? clientId) =>
 {
-    // Базовый запрос с Include для Players
-    var query = db.Games
-                  .Include(g => g.Players)
-                  .AsQueryable();
+    var query = db.Games.Include(g => g.Players).AsQueryable();
 
     if (from.HasValue)
         query = query.Where(g => g.PlayedAt >= from.Value);
@@ -155,22 +157,15 @@ app.MapGet("/api/games", async (
     if (clientId.HasValue)
         query = query.Where(g => g.Players.Any(p => p.Id == clientId.Value));
 
-    // Проекция в анонимный DTO
     var result = await query
-        .Select(g => new
-        {
-            g.Id,
-            g.PlayedAt,
-            g.Type,
-            Players = g.Players
-                       .Select(p => new
-                       {
-                           p.Id,
-                           p.Name
-                       })
-                       .ToList()
-        })
-        .ToListAsync();
+            .Select(g => new
+            {
+                g.Id,
+                g.PlayedAt,
+                g.Type,
+                PlayerIds = g.Players.Select(p => p.Id).ToList()
+            })
+            .ToListAsync();
 
     return Results.Ok(result);
 });

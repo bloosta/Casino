@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Windows;
@@ -100,5 +101,16 @@ namespace CasinoFrameworkApp.ViewModels
             await _api.DeleteGameAsync(id);
             await LoadGamesAsync();
         }
+
+        public async Task UpdateGameAsync(int id, DateTime playedAt, string type, List<int> playerIds)
+        {
+            await _api.UpdateGameAsync(id, playedAt, type, playerIds);
+        }
+
+        public async Task ExecuteRefreshAsync()
+        {
+            await LoadGamesAsync();
+        }
+
     }
 }
