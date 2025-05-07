@@ -1,5 +1,4 @@
-﻿// ViewModels/ClientsViewModel.cs
-using System;
+﻿using System;
 using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Windows;
@@ -56,14 +55,12 @@ namespace CasinoFrameworkApp.ViewModels
 
         private async Task CreateAsync()
         {
-            // TODO: спросить имя через диалог
             await _api.CreateClientAsync("NewClient");
             await LoadClientsAsync();
         }
 
         private async Task UpdateAsync(int id)
         {
-            // TODO: спросить новое имя
             await _api.UpdateClientAsync(id, "RenamedClient");
             await LoadClientsAsync();
         }
@@ -75,5 +72,21 @@ namespace CasinoFrameworkApp.ViewModels
             await _api.DeleteClientAsync(id);
             await LoadClientsAsync();
         }
+
+        // внутри класса ClientsViewModel:
+
+        // для вызова из MainWindow
+        public async Task UpdateClientAsync(int id, string newName)
+        {
+            await _api.UpdateClientAsync(id, newName);
+        }
+
+        // чтобы можно было обновить после редактирования
+        public async Task ExecuteRefreshAsync()
+        {
+            await LoadClientsAsync();
+        }
+
+
     }
 }

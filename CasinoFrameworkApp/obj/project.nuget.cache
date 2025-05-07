@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "ageBDdAWgJM=",
+  "dgSpecHash": "dg8uQ97Lwcw=",
   "success": true,
   "projectFilePath": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\CasinoFrameworkApp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bloosta\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\bloosta\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\bloosta\\.nuget\\packages\\extended.wpf.toolkit\\4.7.25104.5739\\extended.wpf.toolkit.4.7.25104.5739.nupkg.sha512",
     "C:\\Users\\bloosta\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.0\\microsoft.aspnetcore.openapi.8.0.0.nupkg.sha512",
     "C:\\Users\\bloosta\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\bloosta\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

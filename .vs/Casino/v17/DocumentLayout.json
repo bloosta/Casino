@@ -3,28 +3,48 @@
   "WorkspaceRootPath": "C:\\Users\\bloosta\\source\\repos\\Casino\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\editgamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\editgamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\viewmodels\\gamesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\viewmodels\\gamesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\editgamewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\editgamewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\editgamewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\editgamewindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\editgamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\editgamewindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\viewmodels\\clientsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\viewmodels\\clientsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\editclientwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\editclientwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\editclientwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\editclientwindow.xaml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\viewmodels\\gamesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\viewmodels\\gamesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\casinoframeworkapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\casinoframeworkapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\converters\\stringtonullableintconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -37,10 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\viewmodels\\mainwindowviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\casinoframeworkapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\casinoframeworkapp.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{00FDFDCF-0A96-4CF6-BB80-B52FF8C8FDDD}|CasinoConsoleApp\\CasinoConsoleApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoconsoleapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -61,14 +77,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\viewmodels\\clientsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|solutionrelative:casinoframeworkapp\\viewmodels\\clientsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0BC89AFA-9BC8-407E-8110-D70609E1521E}|CasinoFrameworkApp\\CasinoFrameworkApp.csproj|c:\\users\\bloosta\\source\\repos\\casino\\casinoframeworkapp\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -211,59 +219,61 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "ClientsViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\ViewModels\\ClientsViewModel.cs",
+              "RelativeDocumentMoniker": "CasinoFrameworkApp\\ViewModels\\ClientsViewModel.cs",
+              "ToolTip": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\ViewModels\\ClientsViewModel.cs",
+              "RelativeToolTip": "CasinoFrameworkApp\\ViewModels\\ClientsViewModel.cs",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAiwFgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T19:08:36.921Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\MainWindow.xaml",
               "RelativeDocumentMoniker": "CasinoFrameworkApp\\MainWindow.xaml",
               "ToolTip": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\MainWindow.xaml",
               "RelativeToolTip": "CasinoFrameworkApp\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-05-06T12:00:04.56Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "CasinoFrameworkApp\\MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\MainWindow.xaml.cs",
-              "RelativeToolTip": "CasinoFrameworkApp\\MainWindow.xaml.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAADwvyMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T12:00:47.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GamesViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\ViewModels\\GamesViewModel.cs",
-              "RelativeDocumentMoniker": "CasinoFrameworkApp\\ViewModels\\GamesViewModel.cs",
-              "ToolTip": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\ViewModels\\GamesViewModel.cs",
-              "RelativeToolTip": "CasinoFrameworkApp\\ViewModels\\GamesViewModel.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAADgv3EAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T11:59:34.17Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\LoginWindow.xaml.cs",
-              "RelativeDocumentMoniker": "CasinoFrameworkApp\\LoginWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\LoginWindow.xaml.cs",
-              "RelativeToolTip": "CasinoFrameworkApp\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAcwCwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T09:56:11.635Z",
+              "WhenOpened": "2025-05-06T12:00:04.56Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CasinoFrameworkApp\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "CasinoFrameworkApp\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAA4wHMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T12:00:47.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditGameWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\EditGameWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CasinoFrameworkApp\\EditGameWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\EditGameWindow.xaml.cs",
+              "RelativeToolTip": "CasinoFrameworkApp\\EditGameWindow.xaml.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAqwK0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-07T14:27:03.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "EditGameWindow.xaml",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\EditGameWindow.xaml",
               "RelativeDocumentMoniker": "CasinoFrameworkApp\\EditGameWindow.xaml",
@@ -276,18 +286,78 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "EditGameWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\EditGameWindow.xaml.cs",
-              "RelativeDocumentMoniker": "CasinoFrameworkApp\\EditGameWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\EditGameWindow.xaml.cs",
-              "RelativeToolTip": "CasinoFrameworkApp\\EditGameWindow.xaml.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAiwDgAAAAAAAAAAAAAAA==",
+              "Title": "EditClientWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\EditClientWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CasinoFrameworkApp\\EditClientWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\EditClientWindow.xaml.cs",
+              "RelativeToolTip": "CasinoFrameworkApp\\EditClientWindow.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T22:04:34.393Z"
+              "WhenOpened": "2025-05-07T14:51:37.908Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
+              "Title": "EditClientWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\EditClientWindow.xaml",
+              "RelativeDocumentMoniker": "CasinoFrameworkApp\\EditClientWindow.xaml",
+              "ToolTip": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\EditClientWindow.xaml",
+              "RelativeToolTip": "CasinoFrameworkApp\\EditClientWindow.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-05-07T14:57:16.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GamesViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\ViewModels\\GamesViewModel.cs",
+              "RelativeDocumentMoniker": "CasinoFrameworkApp\\ViewModels\\GamesViewModel.cs",
+              "ToolTip": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\ViewModels\\GamesViewModel.cs",
+              "RelativeToolTip": "CasinoFrameworkApp\\ViewModels\\GamesViewModel.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAIAxwGsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T11:59:34.17Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CasinoFrameworkApp.csproj",
+              "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\CasinoFrameworkApp.csproj",
+              "RelativeDocumentMoniker": "CasinoFrameworkApp\\CasinoFrameworkApp.csproj",
+              "ToolTip": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\CasinoFrameworkApp.csproj",
+              "RelativeToolTip": "CasinoFrameworkApp\\CasinoFrameworkApp.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-04T00:09:09.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\App.xaml.cs",
+              "RelativeDocumentMoniker": "CasinoFrameworkApp\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\App.xaml.cs",
+              "RelativeToolTip": "CasinoFrameworkApp\\App.xaml.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAiwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T09:47:34.444Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CasinoFrameworkApp\\LoginWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "CasinoFrameworkApp\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAcwCwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-06T09:56:11.635Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "StringToNullableIntConverter.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\Converters\\StringToNullableIntConverter.cs",
               "RelativeDocumentMoniker": "CasinoFrameworkApp\\Converters\\StringToNullableIntConverter.cs",
@@ -299,7 +369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "IApiClientService.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\Services\\IApiClientService.cs",
               "RelativeDocumentMoniker": "CasinoFrameworkApp\\Services\\IApiClientService.cs",
@@ -311,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "MainWindowViewModel.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\ViewModels\\MainWindowViewModel.cs",
               "RelativeDocumentMoniker": "CasinoFrameworkApp\\ViewModels\\MainWindowViewModel.cs",
@@ -323,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Program.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Program.cs",
@@ -335,7 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "SearchGamesCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Handlers\\SearchGamesCommandHandler.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Handlers\\SearchGamesCommandHandler.cs",
@@ -347,7 +417,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "SearchGamesCommand.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Commands\\SearchGamesCommand.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Commands\\SearchGamesCommand.cs",
@@ -359,19 +429,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CasinoFrameworkApp.csproj",
-              "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\CasinoFrameworkApp.csproj",
-              "RelativeDocumentMoniker": "CasinoFrameworkApp\\CasinoFrameworkApp.csproj",
-              "ToolTip": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\CasinoFrameworkApp.csproj",
-              "RelativeToolTip": "CasinoFrameworkApp\\CasinoFrameworkApp.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-04T00:09:09.736Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "ApiClientService.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\Services\\ApiClientService.cs",
               "RelativeDocumentMoniker": "CasinoFrameworkApp\\Services\\ApiClientService.cs",
@@ -383,7 +441,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "LoginViewModel.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\ViewModels\\LoginViewModel.cs",
               "RelativeDocumentMoniker": "CasinoFrameworkApp\\ViewModels\\LoginViewModel.cs",
@@ -395,31 +453,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "App.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\App.xaml.cs",
-              "RelativeDocumentMoniker": "CasinoFrameworkApp\\App.xaml.cs",
-              "ToolTip": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\App.xaml.cs",
-              "RelativeToolTip": "CasinoFrameworkApp\\App.xaml.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAswB8AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T09:47:34.444Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ClientsViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\ViewModels\\ClientsViewModel.cs",
-              "RelativeDocumentMoniker": "CasinoFrameworkApp\\ViewModels\\ClientsViewModel.cs",
-              "ToolTip": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\ViewModels\\ClientsViewModel.cs",
-              "RelativeToolTip": "CasinoFrameworkApp\\ViewModels\\ClientsViewModel.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAUwE8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-06T19:08:36.921Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\App.xaml",
               "RelativeDocumentMoniker": "CasinoFrameworkApp\\App.xaml",
@@ -431,7 +465,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "CasinoFrameworkApp\\LoginWindow.xaml",
@@ -442,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "CasinoTest.csproj",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoTest\\CasinoTest.csproj",
               "RelativeDocumentMoniker": "CasinoTest\\CasinoTest.csproj",
@@ -454,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "CasinoConsoleApp.csproj",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\CasinoConsoleApp.csproj",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\CasinoConsoleApp.csproj",
@@ -466,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "CasinoFrameworkApp\\LoginWindow.xaml",
@@ -477,7 +511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "BaseViewModel.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\Infrastructure\\BaseViewModel.cs",
               "RelativeDocumentMoniker": "CasinoFrameworkApp\\Infrastructure\\BaseViewModel.cs",
@@ -489,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "RelayCommand.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoFrameworkApp\\Infrastructure\\RelayCommand.cs",
               "RelativeDocumentMoniker": "CasinoFrameworkApp\\Infrastructure\\RelayCommand.cs",
@@ -501,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "AddGameCommand.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Commands\\AddGameCommand.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Commands\\AddGameCommand.cs",
@@ -513,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "ICommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Handlers\\ICommandHandler.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Handlers\\ICommandHandler.cs",
@@ -525,7 +559,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "ICommand.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Commands\\ICommand.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Commands\\ICommand.cs",
@@ -537,7 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "AddGameCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Handlers\\AddGameCommandHandler.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Handlers\\AddGameCommandHandler.cs",
@@ -549,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "AddUserCommand.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Commands\\AddUserCommand.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Commands\\AddUserCommand.cs",
@@ -561,7 +595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "CreateClientCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Handlers\\CreateClientCommandHandler.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Handlers\\CreateClientCommandHandler.cs",
@@ -573,7 +607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "CreateClientCommand.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Commands\\CreateClientCommand.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Commands\\CreateClientCommand.cs",
@@ -585,7 +619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "AddUserCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Handlers\\AddUserCommandHandler.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Handlers\\AddUserCommandHandler.cs",
@@ -597,7 +631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "cffq2cvn..sql",
               "DocumentMoniker": "C:\\Users\\bloosta\\AppData\\Local\\Temp\\cffq2cvn..sql",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\cffq2cvn..sql",
@@ -608,7 +642,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "SearchClientsCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Handlers\\SearchClientsCommandHandler.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Handlers\\SearchClientsCommandHandler.cs",
@@ -620,7 +654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Entities\\User.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Entities\\User.cs",
@@ -632,7 +666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -644,7 +678,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Data\\ApplicationDbContext.cs",
@@ -656,7 +690,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "dbo.Users.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CasinoDb/True/SqlTable/dbo.Users.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/CasinoDb/True/SqlTable/dbo.Users.sql",
@@ -665,7 +699,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "LoginUserCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Handlers\\LoginUserCommandHandler.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Handlers\\LoginUserCommandHandler.cs",
@@ -677,7 +711,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "DeleteGameCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Handlers\\DeleteGameCommandHandler.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Handlers\\DeleteGameCommandHandler.cs",
@@ -689,7 +723,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "DeleteGameCommand.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Commands\\DeleteGameCommand.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Commands\\DeleteGameCommand.cs",
@@ -701,7 +735,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "UpdateGameCommandHandler.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Handlers\\UpdateGameCommandHandler.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Handlers\\UpdateGameCommandHandler.cs",
@@ -713,7 +747,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "UpdateGameCommand.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Commands\\UpdateGameCommand.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Commands\\UpdateGameCommand.cs",
@@ -725,7 +759,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "LoginUserCommand.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Commands\\LoginUserCommand.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Commands\\LoginUserCommand.cs",
@@ -737,7 +771,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "PasswordHasher.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Security\\PasswordHasher.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Security\\PasswordHasher.cs",
@@ -749,7 +783,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "CurrentUserContext.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Security\\CurrentUserContext.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Security\\CurrentUserContext.cs",
@@ -761,7 +795,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "ICurrentUserContext.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Security\\ICurrentUserContext.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Security\\ICurrentUserContext.cs",
@@ -773,7 +807,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "Game.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Entities\\Game.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Entities\\Game.cs",
@@ -785,7 +819,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "Client.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\Core\\Entities\\Client.cs",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\Core\\Entities\\Client.cs",
@@ -797,7 +831,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoConsoleApp\\appsettings.json",
               "RelativeDocumentMoniker": "CasinoConsoleApp\\appsettings.json",
@@ -809,7 +843,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 52,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "C:\\Users\\bloosta\\source\\repos\\Casino\\CasinoTest\\UnitTest1.cs",
               "RelativeDocumentMoniker": "CasinoTest\\UnitTest1.cs",

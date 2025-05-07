@@ -10,9 +10,7 @@ namespace CasinoFrameworkApp
     public partial class App : Application
     {
         private readonly IHost _host;
-
-        // Добавьте это свойство:
-        public static IServiceProvider Services { get; private set; }
+        public static IServiceProvider Services { get; private set; } = null!;  // <- инициализация
 
         public App()
         {
@@ -38,7 +36,7 @@ namespace CasinoFrameworkApp
         protected override async void OnStartup(StartupEventArgs e)
         {
             await _host.StartAsync();
-            var login = Services.GetRequiredService<LoginWindow>();  // <-- теперь доступно
+            var login = Services.GetRequiredService<LoginWindow>();
             login.Show();
             base.OnStartup(e);
         }

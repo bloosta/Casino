@@ -80,7 +80,6 @@ namespace CasinoFrameworkApp.ViewModels
 
         private async Task CreateGameAsync()
         {
-            // TODO: спросить у пользователя параметры новой игры (дату, тип, список клиентов)
             var now = DateTime.Now;
             await _api.AddGameAsync(now, "NewGame", new());
             await LoadGamesAsync();
@@ -88,7 +87,6 @@ namespace CasinoFrameworkApp.ViewModels
 
         private async Task UpdateGameAsync(int id)
         {
-            // TODO: спросить у пользователя новые параметры
             var now = DateTime.Now;
             await _api.UpdateGameAsync(id, now, "UpdatedType", new());
             await LoadGamesAsync();
