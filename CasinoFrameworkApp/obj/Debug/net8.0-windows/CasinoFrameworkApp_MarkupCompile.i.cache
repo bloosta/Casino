@@ -12,9 +12,15 @@ TRACE;DEBUG;NET;NET8_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR
 C:\Users\bloosta\source\repos\Casino\CasinoFrameworkApp\App.xaml
 11407045341
 
+<<<<<<< Updated upstream
 5-1633959757
 247-234655570
 MainWindow.xaml;
+=======
+20-1892756385
+3611460324062
+EditClientWindow.xaml;EditGameWindow.xaml;LoginWindow.xaml;MainWindow.xaml;
+>>>>>>> Stashed changes
 
 True
 
