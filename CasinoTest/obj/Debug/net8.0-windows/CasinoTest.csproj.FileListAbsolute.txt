@@ -196,3 +196,5 @@ C:\Users\bloosta\source\repos\Casino\CasinoTest\obj\Debug\net8.0-windows\refint\
 C:\Users\bloosta\source\repos\Casino\CasinoTest\obj\Debug\net8.0-windows\CasinoTest.pdb
 C:\Users\bloosta\source\repos\Casino\CasinoTest\obj\Debug\net8.0-windows\CasinoTest.genruntimeconfig.cache
 C:\Users\bloosta\source\repos\Casino\CasinoTest\obj\Debug\net8.0-windows\ref\CasinoTest.dll
+C:\Users\bloosta\source\repos\Casino\CasinoTest\bin\Debug\net8.0-windows\App.config
+C:\Users\bloosta\source\repos\Casino\CasinoTest\bin\Debug\net8.0-windows\CasinoConsoleApp.dll.config

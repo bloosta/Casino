@@ -135,3 +135,5 @@ C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\obj\Debug\net8.0\refint\Ca
 C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\obj\Debug\net8.0\CasinoConsoleApp.pdb
 C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\obj\Debug\net8.0\CasinoConsoleApp.genruntimeconfig.cache
 C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\obj\Debug\net8.0\ref\CasinoConsoleApp.dll
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\net8.0\App.config
+C:\Users\bloosta\source\repos\Casino\CasinoConsoleApp\bin\Debug\net8.0\CasinoConsoleApp.dll.config
