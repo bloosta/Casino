@@ -19,7 +19,6 @@ namespace CasinoFrameworkApp
             _gamesVm = vm.GamesVM;
             _clientsVm = vm.ClientsVM;
 
-            // Маска для From
             DatePickerFrom.Loaded += (_, __) =>
             {
                 if (DatePickerFrom.Template.FindName("PART_TextBox", DatePickerFrom)
@@ -57,7 +56,6 @@ namespace CasinoFrameworkApp
                 }
             };
 
-            // Маска для To
             DatePickerTo.Loaded += (_, __) =>
             {
                 if (DatePickerTo.Template.FindName("PART_TextBox", DatePickerTo)

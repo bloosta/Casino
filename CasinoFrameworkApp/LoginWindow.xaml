@@ -4,8 +4,8 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d"
-        Title="Login" Height="200" Width="300">
-	<Grid Margin="10">
+        Title="Вход" Height="250" Width="400">
+	<Grid Margin="20">
 		<Grid.RowDefinitions>
 			<RowDefinition Height="Auto"/>
 			<RowDefinition Height="Auto"/>
@@ -13,20 +13,28 @@
 		</Grid.RowDefinitions>
 		<StackPanel>
 			<!-- Лейбл и текстовое поле для Username -->
-			<Label Content="Username" />
-			<TextBox Margin="0,0,0,5"
+			<Label Content="Логин" Margin="0,0,0,5" />
+            <TextBox Margin="0,0,0,10"
 					 Text="{Binding Username, UpdateSourceTrigger=PropertyChanged}" />
 
 			<!-- Лейбл и PasswordBox для пароля -->
-            <PasswordBox Margin="0,0,0,10"
+            <Label Content="Пароль" Margin="0,0,0,5" />
+            <PasswordBox Margin="0,0,0,15"
              x:Name="PasswordBox"
              PasswordChanged="PasswordBox_PasswordChanged" />
 
-            <Button Content="Login"
-					Command="{Binding LoginCommand}"
-					IsDefault="True"
-					Width="80"
-					HorizontalAlignment="Center" />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="Вход"
+						Command="{Binding LoginCommand}"
+						IsDefault="True"
+						Width="100"
+						Height="30"
+						Margin="0,0,10,0" />
+                <Button Content="Регистрация"
+						Command="{Binding RegisterCommand}"
+						Width="100"
+						Height="30" />
+            </StackPanel>
 		</StackPanel>
 	</Grid>
 </Window>

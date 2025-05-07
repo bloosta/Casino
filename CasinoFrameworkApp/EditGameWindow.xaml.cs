@@ -15,7 +15,6 @@ namespace CasinoFrameworkApp
         public string Type { get; private set; } = string.Empty;
         public List<int> PlayerIds { get; private set; } = new();
 
-        // Флаги для форматирования
         private bool _isDateFormatting = false;
         private bool _isTimeFormatting = false;
 
@@ -23,13 +22,11 @@ namespace CasinoFrameworkApp
         {
             InitializeComponent();
 
-            // Инициализируем поля
             DatePickerPlayedAt.SelectedDate = dto.PlayedAt.Date;
             TextBoxTime.Text = dto.PlayedAt.ToString("HH:mm:ss");
             TextBoxType.Text = dto.Type;
             TextBoxPlayers.Text = string.Join(",", dto.PlayerIds);
 
-            // После загрузки DatePicker, найдём внутри его TextBox и повесим обработчики
             DatePickerPlayedAt.Loaded += (_, __) =>
             {
                 if (DatePickerPlayedAt.Template.FindName("PART_TextBox", DatePickerPlayedAt)
@@ -41,13 +38,11 @@ namespace CasinoFrameworkApp
             };
         }
 
-        // Блокируем в дате всё, кроме цифр
         private void DatePickerTxt_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = !char.IsDigit(e.Text, 0);
         }
 
-        // Форматируем ввод даты dd.MM.yyyy
         private void DatePickerTxt_TextChanged(object sender, TextChangedEventArgs e)
         {
             if (_isDateFormatting) return;
@@ -55,14 +50,11 @@ namespace CasinoFrameworkApp
 
             var txt = (DatePickerTextBox)sender;
             int oldPos = txt.SelectionStart;
-            // сколько цифр слева
             int digitsLeft = txt.Text.Take(oldPos).Count(char.IsDigit);
 
-            // берем только цифры, максимум 8
             var digits = new string(txt.Text.Where(char.IsDigit).ToArray());
             if (digits.Length > 8) digits = digits.Substring(0, 8);
 
-            // строим форматированную строку
             string formatted = "";
             for (int i = 0; i < digits.Length; i++)
             {
@@ -72,7 +64,6 @@ namespace CasinoFrameworkApp
 
             txt.Text = formatted;
 
-            // пересчитываем новую позицию курсора
             int newPos = digitsLeft;
             if (newPos > 2) newPos++;
             if (newPos > 4) newPos++;
@@ -81,7 +72,6 @@ namespace CasinoFrameworkApp
             _isDateFormatting = false;
         }
 
-        // Остальной код для времени, типа и игроков остаётся без изменений:
         private void TextBoxTime_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
             e.Handled = !char.IsDigit(e.Text, 0);
@@ -118,33 +108,29 @@ namespace CasinoFrameworkApp
 
         private void OnSave(object sender, RoutedEventArgs e)
         {
-            // Дата
             if (DatePickerPlayedAt.SelectedDate == null)
             {
-                MessageBox.Show("Выберите дату.", "Validation",
+                MessageBox.Show("Выберите дату.", "Ошибка",
                                 MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            // Парсим дату+время
             var date = DatePickerPlayedAt.SelectedDate.Value;
             if (!TimeSpan.TryParse(TextBoxTime.Text.Trim(), out var ts))
             {
                 MessageBox.Show("Введите корректное время (ЧЧ:ММ:СС).",
-                                "Validation", MessageBoxButton.OK, MessageBoxImage.Warning);
+                                "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            // Тип
             var type = TextBoxType.Text.Trim();
             if (string.IsNullOrEmpty(type))
             {
-                MessageBox.Show("Укажите тип игры.", "Validation",
+                MessageBox.Show("Укажите тип игры.", "Ошибка",
                                 MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            // Игроки
             var ids = TextBoxPlayers.Text
                 .Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries)
                 .Select(s => int.TryParse(s.Trim(), out var i) ? (int?)i : null)
@@ -153,12 +139,11 @@ namespace CasinoFrameworkApp
                 .ToList();
             if (ids.Count == 0)
             {
-                MessageBox.Show("Нужно указать хотя бы одного игрока.", "Validation",
+                MessageBox.Show("Нужно указать хотя бы одного игрока.", "Ошибка",
                                 MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            // Сохраняем результаты
             PlayedAt = date.Date + ts;
             Type = type;
             PlayerIds = ids;

@@ -26,17 +26,18 @@ namespace CasinoFrameworkApp.ViewModels
         }
 
         public ICommand LoginCommand { get; }
+        public ICommand RegisterCommand { get; }
 
         public LoginViewModel(IApiClientService api)
         {
             _api = api;
             LoginCommand = new RelayCommand(async _ => await LoginAsync(), _ => CanLogin());
+            RegisterCommand = new RelayCommand(async _ => await RegisterAsync(), _ => CanLogin());
         }
 
         private bool CanLogin() =>
             !string.IsNullOrWhiteSpace(Username) &&
             !string.IsNullOrWhiteSpace(Password);
-
 
         public event Action? LoginSucceeded;
         private async Task LoginAsync()
@@ -49,6 +50,19 @@ namespace CasinoFrameworkApp.ViewModels
             else
             {
                 MessageBox.Show("Неверный логин или пароль.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
+
+        private async Task RegisterAsync()
+        {
+            try
+            {
+                await _api.RegisterUserAsync(Username, Password);
+                MessageBox.Show("Регистрация успешно завершена. Теперь вы можете войти.", "Успех", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка при регистрации: {ex.Message}", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
     }

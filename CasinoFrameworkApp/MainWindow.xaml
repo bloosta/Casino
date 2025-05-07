@@ -3,22 +3,21 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="clr-namespace:CasinoFrameworkApp.ViewModels"
         xmlns:conv="clr-namespace:CasinoFrameworkApp.Converters"
-        Title="Casino" Height="450" Width="800">
+        Title="Казино" Height="450" Width="1000">
     <Window.Resources>
         <conv:StringToNullableIntConverter x:Key="StrToNullableInt" />
+        <conv:DateTimeConverter x:Key="DateTimeConverter" />
     </Window.Resources>
 
     <DockPanel>
         <TabControl>
-
-            <!-- Вкладка Клиенты -->
-            <TabItem Header="Clients">
+            <TabItem Header="Клиенты">
                 <DockPanel Margin="10">
                     <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="0,0,0,10">
-                        <Label Content="Filter:" VerticalAlignment="Center"/>
+                        <Label Content="Поиск:" VerticalAlignment="Center"/>
                         <TextBox Width="150" Margin="5,0"
                      Text="{Binding ClientsVM.Filter, UpdateSourceTrigger=PropertyChanged}"/>
-                        <Button Content="Refresh"
+                        <Button Content="Обновить"
                     Command="{Binding ClientsVM.RefreshCommand}"
                     Margin="10,0"/>
                     </StackPanel>
@@ -30,8 +29,8 @@
                     Margin="0,0,0,10">
                         <DataGrid.Columns>
                             <DataGridTextColumn Header="ID"   Binding="{Binding Id}"   Width="50"/>
-                            <DataGridTextColumn Header="Name" Binding="{Binding Name}" Width="*"/>
-                            <DataGridTemplateColumn Header="Actions" Width="100">
+                            <DataGridTextColumn Header="Имя" Binding="{Binding Name}" Width="*"/>
+                            <DataGridTemplateColumn Header="Действия" Width="100">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
                                         <StackPanel Orientation="Horizontal">
@@ -50,35 +49,38 @@
                         </DataGrid.Columns>
                     </DataGrid>
 
-                    <Button Content="Add Client"
+                    <Button Content="Добавить клиента"
                   Command="{Binding ClientsVM.CreateCommand}"
                   HorizontalAlignment="Right"
                   Width="100"/>
                 </DockPanel>
             </TabItem>
 
-            <!-- Вкладка Игры -->
-            <TabItem Header="Games">
+            <TabItem Header="Игры">
                 <DockPanel Margin="10">
                     <StackPanel Orientation="Horizontal" DockPanel.Dock="Top" Margin="0,0,0,10">
-                        <Label Content="From:" VerticalAlignment="Center"/>
+                        <Label Content="От:" VerticalAlignment="Center"/>
                         <DatePicker x:Name="DatePickerFrom"
                         SelectedDate="{Binding GamesVM.From}"
                         Width="120" Margin="5,0"/>
-                        <Label Content="To:" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                        <Label Content="До:" VerticalAlignment="Center" Margin="10,0,0,0"/>
                         <DatePicker x:Name="DatePickerTo"
                         SelectedDate="{Binding GamesVM.To}"
                         Width="120" Margin="5,0"/>
-                        <Label Content="Type:" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                        <Label Content="Игра" VerticalAlignment="Center" Margin="10,0,0,0"/>
                         <TextBox Text="{Binding GamesVM.TypeFilter, UpdateSourceTrigger=PropertyChanged}"
                      Width="120" Margin="5,0"/>
-                        <Label Content="Client ID:" VerticalAlignment="Center" Margin="10,0,0,0"/>
+                        <Label Content="Клиент (ID):" VerticalAlignment="Center" Margin="10,0,0,0"/>
                         <TextBox Width="50" Margin="5,0"
                      Text="{Binding GamesVM.ClientIdFilter,
                             Converter={StaticResource StrToNullableInt},
                             UpdateSourceTrigger=PropertyChanged}" />
-                        <Button Content="Refresh"
+                        <Button Content="Обновить"
                     Command="{Binding GamesVM.RefreshCommand}"
+                    Margin="10,0"/>
+                        <Button Content="Добавить игру"
+                    Command="{Binding GamesVM.CreateCommand}"
+                    Width="150"
                     Margin="10,0"/>
                     </StackPanel>
 
@@ -88,18 +90,17 @@
                     IsReadOnly="True"
                     Margin="0,0,0,10">
                         <DataGrid.Columns>
-                            <DataGridTextColumn Header="ID"       Binding="{Binding Id}"       Width="50"/>
-                            <DataGridTextColumn Header="PlayedAt" Binding="{Binding PlayedAt}" Width="150"/>
-                            <DataGridTextColumn Header="Type"     Binding="{Binding Type}"     Width="150"/>
-                            <DataGridTextColumn Header="Players"  Binding="{Binding PlayerIdsDisplay}" Width="150"/>
-                            <DataGridTemplateColumn Header="Actions" Width="100">
+                            <DataGridTextColumn Header="ID" Binding="{Binding Id}" Width="50"/>
+                            <DataGridTextColumn Header="Дата" Binding="{Binding PlayedAt, Converter={StaticResource DateTimeConverter}}" Width="150"/>
+                            <DataGridTextColumn Header="Игра" Binding="{Binding Type}" Width="150"/>
+                            <DataGridTextColumn Header="Клиенты" Binding="{Binding PlayerIdsDisplay}" Width="*"/>
+                            <DataGridTemplateColumn Header="Действия" Width="100">
                                 <DataGridTemplateColumn.CellTemplate>
                                     <DataTemplate>
                                         <StackPanel Orientation="Horizontal">
                                             <Button Content="✎"
                               Click="OnEditGame_Click"
                               Width="30" Margin="0,0,5,0"/>
-
                                             <Button Content="🗑"
                               Command="{Binding DataContext.GamesVM.DeleteCommand,
                                         RelativeSource={RelativeSource AncestorType=Window}}"
@@ -111,13 +112,6 @@
                             </DataGridTemplateColumn>
                         </DataGrid.Columns>
                     </DataGrid>
-
-                    <Button Content="Add Game"
-                  Command="{Binding GamesVM.CreateCommand}"
-                  DockPanel.Dock="Bottom"
-                  HorizontalAlignment="Right"
-                  Width="100"
-                  Margin="0,10,0,0"/>
                 </DockPanel>
             </TabItem>
 

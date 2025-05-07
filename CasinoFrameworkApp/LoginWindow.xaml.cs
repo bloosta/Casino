@@ -19,16 +19,12 @@ namespace CasinoFrameworkApp
 
             vm.LoginSucceeded += () =>
             {
-                // Получаем GamesWindow из DI
                 var games = App.Services.GetRequiredService<MainWindow>();
 
-                // Делаем его главным окном приложения
                 Application.Current.MainWindow = games;
 
-                // Показываем GamesWindow
                 games.Show();
 
-                // Теперь, когда GamesWindow — MainWindow, можно закрыть LoginWindow без shutdown
                 this.Close();
             };
         }

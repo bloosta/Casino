@@ -18,7 +18,7 @@ namespace CasinoFrameworkApp
             var name = TextBoxName.Text.Trim();
             if (string.IsNullOrEmpty(name))
             {
-                MessageBox.Show("Введите имя клиента.", "Validation", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Введите имя клиента.", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
             NewName = name;

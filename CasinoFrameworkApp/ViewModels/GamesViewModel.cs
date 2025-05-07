@@ -44,7 +44,6 @@ namespace CasinoFrameworkApp.ViewModels
             set { if (Set(ref _clientIdFilter, value)) _ = LoadGamesAsync(); }
         }
 
-        // Команды
         public ICommand CreateCommand { get; }
         public ICommand UpdateCommand { get; }
         public ICommand DeleteCommand { get; }
