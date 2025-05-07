@@ -20,6 +20,10 @@
                         <Button Content="Обновить"
                     Command="{Binding ClientsVM.RefreshCommand}"
                     Margin="10,0"/>
+                        <Button Content="Добавить клиента"
+                    Command="{Binding ClientsVM.CreateCommand}"
+                    Width="150"
+                    Margin="10,0"/>
                     </StackPanel>
 
                     <DataGrid ItemsSource="{Binding ClientsVM.Clients}"
@@ -48,11 +52,6 @@
                             </DataGridTemplateColumn>
                         </DataGrid.Columns>
                     </DataGrid>
-
-                    <Button Content="Добавить клиента"
-                  Command="{Binding ClientsVM.CreateCommand}"
-                  HorizontalAlignment="Right"
-                  Width="100"/>
                 </DockPanel>
             </TabItem>
 

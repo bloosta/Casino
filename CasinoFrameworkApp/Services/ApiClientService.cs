@@ -53,8 +53,11 @@ namespace CasinoFrameworkApp.Services
 
 
         // Игры
-        public async Task AddGameAsync(DateTime playedAt, string type, List<int> clientIds, bool useRawSql = false) =>
-            await _client.PostAsJsonAsync("api/games", new { playedAt, type, clientIds, useRawSql });
+        public async Task AddGameAsync(DateTime playedAt, string type, List<int> clientIds, bool useRawSql = false)
+        {
+            var response = await _client.PostAsJsonAsync("api/games", new { playedAt, type, clientIds, useRawSql });
+            response.EnsureSuccessStatusCode();
+        }
 
         public async Task UpdateGameAsync(int id, DateTime playedAt, string type, List<int> clientIds, bool useRawSql = false) =>
             await _client.PutAsJsonAsync($"api/games/{id}", new { playedAt, type, clientIds, useRawSql });
